@@ -1,0 +1,337 @@
+.main-header {
+    width: 100%;
+    min-height: 800px;
+    background-color: #AFD4E2;
+    padding: 44px 165px 44px 165px;
+    position: relative;
+    z-index: 10;
+}
+
+@mixin flex ($flex, $just, $align) {
+    display: $flex;
+    justify-content: $just;
+    align-items: $align;
+}
+
+header {
+    @include flex(flex, space-between, center);
+    min-height: 25px;
+}
+
+header .not-active-nav ul {
+    width: 446px;
+    @include flex(flex, space-between, center);
+    position: relative;
+    z-index: 1;
+}
+
+header .not-active-nav ul a {
+    font-size: 14px;
+    color: #1E3240;
+}
+
+.hero-container {
+    padding-top: 109px;
+    color: #1E3240;
+}
+
+.hero-container h1 {
+    font-size: 90px;
+    display: block;
+    width: 635px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container p {
+    margin: 18px 0;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container div {
+    width: 275px;
+    @include flex(flex, space-between, center);
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container div a {
+    padding: 18px 24px;
+}
+
+.hero-container div a:first-child {
+    border: 1px solid  #1E3240;
+    background-color:  #1E3240;
+    color: white;
+}
+
+.hero-container div a:last-child {
+    border: 1px solid  #1E3240;
+    background-color: #AFD4E2;
+    color: #1E3240;
+}
+
+.hero-container img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.menu-btn {
+    display: none;
+    position: relative;
+}
+
+.menu-btn::before,
+.menu-btn::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background-color: #1E3240;
+}
+
+.menu-btn::before {
+    top: 0;
+}
+
+.menu-btn::after {
+    bottom: 0;
+}
+
+.menu-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #1E3240;
+}
+
+.nav-logo {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-header {
+        min-height: 500px;
+        padding-bottom: 30px;
+    }
+
+    .hero-container {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .hero-container h1 {
+        width: 100%;
+        font-size: 70px;
+    }
+
+    .hero-container img {
+        display: none;
+    }
+
+    .hero-container div {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-header {
+        padding: 44px 100px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .main-header {
+        padding: 44px 50px;
+    }
+
+    .main-header .not-active-nav {
+        position: absolute;
+        width: 100%;
+        top: -100vh;
+        left: 0;
+        transition: all 0s;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .menu-btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        width: 30px;
+        min-height: 20px;
+        position: relative;
+        z-index: 10;
+        transition: 0.3s;
+    }
+
+    .active-menu-btn {
+        width: 30px;
+        min-height: 20px;
+        z-index: 10;
+        cursor: pointer;
+        transition: all 0.3s;
+        position: fixed;
+        right: 50px;
+        top: 44px;
+    }
+
+    .active-menu-btn::before,
+    .active-menu-btn::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        background-color: #1E3240;
+        transition: all 0.3s;
+    }
+
+    .active-menu-btn::before {
+        bottom: 5px;
+        transform: rotate(45deg);
+        transition: all 0.3s;
+    }
+    
+    .active-menu-btn::after {
+        bottom: 5px;
+        transform: rotate(-45deg);
+        transition: all 0.3s;
+    }
+
+    .active-menu-btn span {
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .nav-wrapper {
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .nav-wrapper {
+        display: block;
+    }
+
+    .active-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: all 0.5s;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(12, 12, 12, 0.39);
+        z-index: 9;
+    }
+
+    .main-header header .active-nav ul {
+        display: block;
+        width: 40%;
+        padding: 100px 50px;
+        position: absolute;
+        right: 0;
+        background-color: #AFD4E2;
+        min-height: 400px;
+        z-index: 10;
+        border-bottom-left-radius: 8px;
+    }
+
+    .main-header header .active-nav ul li a {
+        margin: 6px 0;
+        text-align: center;
+        position: relative;
+        padding: 10px;
+        background-color: white;
+        border-radius: 4px;
+        display: block;
+        font-weight: 700;
+        color: #1E3240;
+        @include flex(flex, center, center);
+    }
+
+    .nav-logo {
+        display: block;
+        margin-right: 3px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .hero-container h1 {
+        font-size: 50px;
+    }
+
+    .main-header header .active-nav ul {
+        width: 55%
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-header {
+        padding: 30px;
+    }
+
+    header .not-active-nav ul {
+        width: 100%;
+    }
+
+    .logo {
+        z-index: 11;
+    }
+
+    .fixed-logo {
+        position: fixed;
+        left: 30px;
+        top: 34px;
+        z-index: 11;
+    }
+
+    .main-header header .active-nav ul {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .active-menu-btn {
+        right: 30px;
+        top: 30px
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero-container h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .main-header {
+        width: 100%;
+        min-height: 0;
+    }
+
+    .hero-container {
+        padding-top: 20px;
+    }
+
+    .hero-container h1 {
+        font-size: 30px;
+    }
+
+    .hero-container div {
+        width: 100%;
+    }
+
+    .hero-container div a {
+        padding: 10px;
+    }
+}

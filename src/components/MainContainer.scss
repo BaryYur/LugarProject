@@ -1,0 +1,126 @@
+@mixin flex ($flex, $just, $align) {
+    display: $flex;
+    justify-content: $just;
+    align-items: $align;
+}
+
+main {
+    padding: 150px 0 100px 0;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    color: #1E3240;
+}
+
+.top-main-container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.top-main-container {
+    display: flex;
+}
+
+.top-main__right-container {
+    padding: 50px 0 50px 125px;
+}
+
+.top-main__right-container .description {
+    margin: 40px 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    color: #BDBDBD;
+}
+
+.top-main__right-container .features-container {
+    @include flex(flex, space-between, center); 
+}
+
+.top-main__right-container .features-container p:first-child {
+    color: #AFD4E2;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.top-main__right-container .features-container p:last-child {
+    color: #1E3240;
+    font-size: 48px;
+}
+
+@media only screen and (max-width: 1110px) {
+    main {
+        padding: 50px 0;
+    }
+    
+    .top-main-container {
+        width: 100%;
+    }
+
+    .top-main__right-container {
+        padding: 25px 10px 25px 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .top-main__right-container h2 {
+        font-size: 35px;
+    }
+
+    .top-main__right-container .description {
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .top-main__right-container {
+        padding-left: 30px;
+    }
+
+    .top-main__right-container .features-container p:last-child {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .top-main-container {
+        flex-wrap: wrap;
+        padding: 0;
+        width: 100%;
+    }
+
+    .top-main__right-container  {
+        width: 100%;
+        padding: 20px 30px 30px 20px;
+    }
+
+    .top-main__left-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .top-main__left-container img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .top-main__right-container h2 {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .top-main__right-container  {
+        padding: 20px 30px 30px 20px;
+    }
+
+    .top-main__left-container {
+        padding: 0;
+    }
+}
