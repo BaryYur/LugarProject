@@ -29,6 +29,9 @@ function SlideContainer () {
                         1150: {
                             perPage: 2
                         },
+                        700: {
+                            perPage: 1
+                        }
                     }
                 } }
             >

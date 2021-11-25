@@ -71,6 +71,13 @@ header .not-active-nav ul a {
     border: 1px solid  #1E3240;
     background-color: #AFD4E2;
     color: #1E3240;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-container div a:last-child:hover {
+    background-color: #1E3240;
+    color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 .hero-container img {
