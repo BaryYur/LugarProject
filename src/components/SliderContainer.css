@@ -10,7 +10,7 @@
     margin: 0 15px;
 }
 
-.splide__arrows {
+.slide-main-container .splide__arrows {
     height: 32px;
     width: 76px;
     position: absolute;
@@ -18,7 +18,7 @@
     top: -84px;
 }
 
-.splide__arrows .splide__arrow--next {
+.slide-main-container .splide__arrows .splide__arrow--next {
     width: 32px;
     height: 32px;
     border-radius: 0;
@@ -32,7 +32,7 @@
     font-size: 0;
 }
 
-.splide__arrows .splide__arrow--prev {
+.slide-main-container .splide__arrows .splide__arrow--prev {
     width: 32px;
     height: 32px;
     border-radius: 0;

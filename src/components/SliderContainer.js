@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './SlideContainer.css';
+import './SliderContainer.css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import fSlide from '../images/f-slider.png';
@@ -9,7 +9,7 @@ import thSlide from '../images/th-slider.png';
 // import ftSlide from '../images/ft-slider.png';
 // import fvSlide from '../images/fv-slider.png';
 
-function SlideContainer () {
+function SliderContainer () {
     return (
         <div className="slide-main-container">
             <div className="slide__header">
@@ -85,4 +85,4 @@ function SlideContainer () {
     );
 };
 
-export default SlideContainer;
+export default SliderContainer;
