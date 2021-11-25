@@ -4,7 +4,7 @@ import topMainImg from '../images/first-main-img.png';
 import FormContainer from './FormContainer';
 import './MainContainer.scss';
 import SecondSliderContainer from './SecondSliderContainer';
-import SliderContainer from './SlideContainer';
+import SliderContainer from './SliderContainer';
 
 function MainContainer () {
     return (
