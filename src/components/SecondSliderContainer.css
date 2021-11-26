@@ -1,0 +1,16 @@
+.second-slide-main-container {
+    min-height: 700px;
+    padding: 54px 0 126px 0;
+}
+
+.sec-slide-container {
+    display: flex;
+    width: 1110px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.second-slide__header {
+    width: 1110px;
+    margin: 0 auto;
+}

@@ -22,7 +22,12 @@ function SliderContainer () {
                     pagination: false,
                     perPage: 3,
                     perMove: 1,
+                    gap: "30px",
                     breakpoints: {
+                        1400: {
+                            focus      : 'center',
+                            trimSpace  : false,
+                        },
                         1200: {
                             focus: 'center',
                         },
