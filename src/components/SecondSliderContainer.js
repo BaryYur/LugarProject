@@ -8,7 +8,7 @@ function SecondSliderContainer () {
     return (
         <div className="second-slide-main-container">
             <div className="second-slide__header">
-                <h2></h2>
+                
                 <p></p>
             </div>
             <Splide

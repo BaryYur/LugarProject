@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { NavLink, Link } from 'react-router-dom';
 
-import './MainHeader.scss';
+import './MainHeader.css';
 import logo from '../images/logo.png';
 import heroImg from '../images/hero-img.png';
 import contact from '../images/contact-solid-24.png';

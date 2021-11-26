@@ -2,7 +2,7 @@ import React from 'react';
 
 import topMainImg from '../images/first-main-img.png';
 import FormContainer from './FormContainer';
-import './MainContainer.scss';
+import './MainContainer.css';
 import SecondSliderContainer from './SecondSliderContainer';
 import SliderContainer from './SliderContainer';
 

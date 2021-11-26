@@ -6,21 +6,27 @@
     position: relative;
     z-index: 10;
 }
-
+/* 
 @mixin flex ($flex, $just, $align) {
     display: $flex;
     justify-content: $just;
     align-items: $align;
-}
+} */
 
 header {
-    @include flex(flex, space-between, center);
+    /* @include flex(flex, space-between, center); */
     min-height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .not-active-nav ul {
     width: 446px;
-    @include flex(flex, space-between, center);
+    /* @include flex(flex, space-between, center); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     z-index: 1;
 }
@@ -52,7 +58,10 @@ header .not-active-nav ul a {
 
 .hero-container div {
     width: 275px;
-    @include flex(flex, space-between, center);
+    /* @include flex(flex, space-between, center); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     z-index: 1;
 }
@@ -263,7 +272,10 @@ header .not-active-nav ul a {
         display: block;
         font-weight: 700;
         color: #1E3240;
-        @include flex(flex, center, center);
+        /* @include flex(flex, center, center); */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .nav-logo {

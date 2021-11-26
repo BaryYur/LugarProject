@@ -1,8 +1,8 @@
-@mixin flex ($flex, $just, $align) {
-    display: $flex;
-    justify-content: $just;
-    align-items: $align;
-}
+/* // @mixin flex ($flex, $just, $align) {
+//     display: $flex;
+//     justify-content: $just;
+//     align-items: $align;
+// } */
 
 main {
     padding: 150px 0 100px 0;
@@ -38,7 +38,11 @@ h2 {
 }
 
 .top-main__right-container .features-container {
-    @include flex(flex, space-between, center); 
+     /* @include flex(flex, space-between, center);  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .top-main__right-container .features-container p:first-child {
