@@ -11,7 +11,7 @@ import thSlide from '../images/th-slider.png';
 
 function SliderContainer () {
     return (
-        <div className="slide-main-container">
+        <div className="slider-main-container">
             <div className="slide__header">
                 <h2>Ongoing projects</h2>
                 <p>Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
@@ -25,7 +25,7 @@ function SliderContainer () {
                     gap: "30px",
                     breakpoints: {
                         1400: {
-                            focus      : 'center',
+                            focus: 'center',
                             trimSpace  : false,
                         },
                         1200: {

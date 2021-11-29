@@ -1,4 +1,4 @@
-.second-slide-main-container {
+.second-slider-main-container {
     min-height: 700px;
     padding: 54px 0 126px 0;
 }
@@ -6,11 +6,110 @@
 .sec-slide-container {
     display: flex;
     width: 1110px;
-    border: 1px solid black;
     margin: 0 auto;
 }
 
 .second-slide__header {
     width: 1110px;
     margin: 0 auto;
+    padding-bottom: 78px;
+}
+
+.second-slide__header h2 {
+    text-align: center;
+}
+
+.second-slide__header p {
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #1E3240;
+}
+
+.second-slider-main-container .splide__arrows .splide__arrow--next {
+    width: 32px;
+    height: 32px;
+    border-radius: 0;
+    position: absolute;
+    right: 0;
+    background-image: url('../images/s-next-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    opacity: 0.3;
+    font-size: 0;
+    margin-right: 55px;
+}
+
+.second-slider-main-container .splide__arrows .splide__arrow--next:hover {
+    background-image: url('../images/next-arrow.png');
+    opacity: 1;
+}
+
+
+.second-slider-main-container .splide__arrows .splide__arrow--prev {
+    width: 32px;
+    height: 32px;
+    border-radius: 0;
+    position: absolute;
+    left: 0;
+    background-image: url('../images/s-prev-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    opacity: 0.3;
+    font-size: 0;
+    margin-left: 55px;
+}
+
+.second-slider-main-container .splide__arrows .splide__arrow--prev:hover {
+    background-image: url('../images/prev-arrow.png');
+    opacity: 1;
+}
+
+.sec-slide-container .rg__sec-slide-cont {
+    padding: 32px 0 0 125px;
+}
+
+.sec-slide-container .rg__sec-slide-cont h3 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E3240;
+    margin: 18px 0;
+}
+
+.sec-slide-container .rg__sec-slide-cont p:nth-child(3) {
+    font-size: 24px;
+    line-height: 120%;
+    color: #1E3240;
+}
+
+.sec-slide-container .rg__sec-slide-cont p:nth-child(4) {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #1E3240;
+    margin-top: 18px;
+}
+
+@media only screen and (max-width: 1350px) {
+    .second-slider-main-container .splide__arrows .splide__arrow--next {
+        margin-right: 15px
+    }
+
+    .second-slider-main-container .splide__arrows .splide__arrow--prev { 
+        margin-left: 15px
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .sec-slide-container {
+        border: 1px solid red;
+        width: 90%;
+    }
+
+    .sec-slide-container .rg__sec-slide-cont {
+        padding: 32px 0 0 50px;
+    }
 }
