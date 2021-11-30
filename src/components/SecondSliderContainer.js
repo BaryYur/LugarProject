@@ -8,13 +8,20 @@ import person from '../images/person.png';
 
 const DUMMY__DATA = [
     {
+        id: 'id1',
         img: person,
         h3: 'Dream house isn’t dream anymore',
         description: 'Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar.',
         name: 'Brooklyn Simmons',
         who: 'Artist'
     },
-
+    {
+        id: 'id2',
+        h3: 'Some text',
+        description: 'Some longer text...',
+        name: 'Bary Allen',
+        who: 'Artist'
+    },
 ];
 
 function SecondSliderContainer () {
@@ -30,10 +37,17 @@ function SecondSliderContainer () {
                     pagination: false,
                     perPage: 1,
                     perMove: 1,
+                    breakpoints: {
+                        600: {
+                            pagination: true,
+                            arrows: false
+                        }
+                    }
                 }}
             >
                 {DUMMY__DATA.map(item => (
                     <SecondSplideSlide
+                        key={item.id}
                         img={item.img}
                         h3={item.h3}
                         description={item.description}

@@ -167,4 +167,13 @@
     .slide__header h2 {
         font-size: 27px;
     }
+
+    .slider-main-container .splide__slide {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .slider-main-container {
+        padding-bottom: 20px;
+    }
 }
