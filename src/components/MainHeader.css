@@ -274,6 +274,12 @@ header .not-active-nav ul a {
     }
 }
 
+@media only screen and (max-width: 750px) {
+    .main-header header .active-nav ul {
+        width: 55%
+    }
+}
+
 @media only screen and (max-width: 650px) {
     .hero-container h1 {
         font-size: 50px;

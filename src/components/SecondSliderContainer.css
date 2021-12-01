@@ -228,4 +228,20 @@
     .sec-slide-container .rg__sec-slide-cont {
         padding: 3px;
     }
+
+    .sec-slide-container .rg__sec-slide-cont h3 {
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sec-slide-container .lf__sec-slide-cont img {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .sec-slide-container .lf__sec-slide-cont img {
+        height: 180px;
+    }
 }
