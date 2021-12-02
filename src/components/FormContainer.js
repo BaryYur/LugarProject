@@ -6,7 +6,7 @@ import houseForm from '../images/house-form.png';
 function FormContainer () {
     return (
         <div className="form-container">
-            <div>
+            {/* <div>
                 <img src={houseForm} alt="house-form" />
             </div>
             <form>
@@ -41,7 +41,7 @@ function FormContainer () {
                     <button>Get a quote</button>
                     <p>We don't sell your email and spam.</p>
                 </div>
-            </form>
+            </form> */}
         </div>
     );
 };

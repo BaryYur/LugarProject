@@ -35,8 +35,9 @@ function SliderContainer () {
                             perPage: 2,
                         },
                         700: {
-                            perPage: 1
-                        }
+                            perPage: 1,
+                            pagination: true
+                        },
                     }
                 } }
             >

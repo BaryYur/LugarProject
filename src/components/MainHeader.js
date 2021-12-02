@@ -15,8 +15,14 @@ function MainHeader() {
 
     const menuHandler = () => {
         setActiveMenu(active => !active);
+        document.body.classList.toggle('modal-open');
     };
 
+    const wrapperHandler = () => {
+        setActiveMenu(false);
+        document.body.classList.remove('modal-open');
+    };
+    
     return (
         <div className="main-header">
             <header>
@@ -24,7 +30,7 @@ function MainHeader() {
                     <img src={logo} alt="logo" />
                 </Link>
                 <nav className={activeMenu ? "active-nav" : "not-active-nav"}>
-                    <div onClick={() => setActiveMenu(false)} className="nav-wrapper"></div>
+                    <div onClick={wrapperHandler} className="nav-wrapper"></div>
                     <ul>
                         <li>
                             <NavLink to="/home">

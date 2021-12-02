@@ -93,6 +93,10 @@
     margin-bottom: 84px;
 }
 
+.splide__pagination {
+    bottom: -10px;
+}
+
 @media only screen and (min-width: 1440px) {
     .slider-main-container .splide__arrows {
         right: 0;
