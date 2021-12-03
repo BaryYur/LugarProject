@@ -3,13 +3,14 @@ import React from 'react';
 import { SplideSlide } from '@splidejs/react-splide';
 
 import cavs from '../images/cavs.png';
+import person from '../images/person.png';
 
 function SecondSplideSlide (props) {
     return (
         <SplideSlide>
             <div className="sec-slide-container">
                 <div className="lf__sec-slide-cont">
-                    <img src={props.img} alt={props.id} />
+                    <img src={person} alt="first-person" />
                 </div>
                 <div className="rg__sec-slide-cont">
                     <img src={cavs} alt="cavs" />

@@ -93,6 +93,20 @@
     margin-top: 18px;
 }
 
+.loading-p {
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.error-p {
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 500;
+}
+
 @media only screen and (max-width: 1350px) {
     .second-slider-main-container .splide__arrows .splide__arrow--next {
         margin-right: 15px
