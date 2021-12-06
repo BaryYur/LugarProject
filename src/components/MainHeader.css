@@ -26,6 +26,13 @@ header .not-active-nav ul {
 header .not-active-nav ul a {
     font-size: 14px;
     color: #1E3240;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+header .not-active-nav ul a:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
 }
 
 .hero-container {
