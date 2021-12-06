@@ -80,7 +80,6 @@ form textarea:focus {
     .form-container {
         width: 100%;
         padding: 0 15px;
-        border: 1px solid red;
     }
 
     .form-container .rg__form-container {
@@ -104,7 +103,6 @@ form textarea:focus {
     .rg__form-container {
         width: 60%;
         padding: 10px 0;
-        border: 1px solid black;
     }
 }
 
@@ -116,7 +114,11 @@ form textarea:focus {
     .form-container form div:nth-child(3),
     .form-container form div:nth-child(4) {
         width: 100%;
-        border: 1px solid blue;
+    }
+
+    .form-container form div:nth-child(3) input,
+    .form-container form div:nth-child(4) input {
+        width: 49%;
     }
 
     .form-container form div:nth-child(3) input:nth-child(2),
@@ -127,5 +129,79 @@ form textarea:focus {
     form textarea {
         min-width: 100%;
         max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .lf__form-container {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .rg__form-container {
+        width: 50%;
+    }
+
+    .form-container form div:nth-child(3),
+    .form-container form div:nth-child(4) {
+        flex-wrap: wrap;
+    }
+
+    .form-container form div:nth-child(3) input,
+    .form-container form div:nth-child(4) input {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .form-container form div:nth-child(3) input:nth-child(2),
+    .form-container form div:nth-child(4) input:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    .rg__form-container p {
+        margin: 10px 0; 
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .rg__form-container {
+        width: 100%;
+    }
+
+    .lf__form-container {
+        display: none;
+    }
+
+    .rg__form-container {
+        order: 1;
+    }
+
+    .form-container form div:nth-child(3),
+    .form-container form div:nth-child(4) {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .form-container form div:nth-child(3) input,
+    .form-container form div:nth-child(4) input {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .form-container form div:nth-child(3),
+    .form-container form div:nth-child(4) {
+        flex-wrap: wrap;
+    }
+
+    .form-container form div:nth-child(3) input,
+    .form-container form div:nth-child(4) input {
+        width: 100%;
+    }
+
+    .form-container form div:nth-child(6) button {
+        padding: 10px 15px;
     }
 }
