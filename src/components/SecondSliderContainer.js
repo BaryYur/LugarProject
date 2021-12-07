@@ -14,7 +14,7 @@ function SecondSliderContainer () {
         setIsLoading(true);
         setError(null);
         try {
-          const response = await fetch('https://new-react-http-34a9d-default-rtdb.firebaseio.com/Slider-data.json');
+          const response = await fetch('https://new-react-http-34a9d-default-rtdb.firebaseio.com/slider-data.json');
           if (!response.ok) {
             throw new Error('Something went wrong!');
           };
@@ -45,6 +45,24 @@ function SecondSliderContainer () {
     }, [fetchDataHandler]);
 
 
+    const DUMMY__DATA = [
+        {
+            id: 'id1',
+            h3:'Dream house isn’t dream anymore',
+            description: 'Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar.',
+            name:'Brooklyn Simmons',
+            who:'Artist'
+        },
+        {
+            id: 'id2',
+            h3:'Dream house isn’t dream anymore',
+            description: 'Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar.',
+            name:'Barry Alen',
+            who:'Artist'
+        },
+    ];
+
+
 
     return (
         <div className="second-slider-main-container">
@@ -66,14 +84,14 @@ function SecondSliderContainer () {
                     }
                 }}
             >
-                {sliderData.map(item => (
+                {DUMMY__DATA.map(item => (
                     <SecondSplideSlide
                         key={item.id}
                         h3={item.h3}
                         description={item.description}
                         name={item.name}
                         who={item.who}
-                     />
+                    />
                 ))}
                 {isLoading && <p className="loading-p">Loading...</p>}
                 {!isLoading && error && <p className="error-p">{error}</p>}

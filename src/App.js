@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectPage from './pages/ProjectPage';
 import ContactPage from  './pages/ContactPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
         <Route path="/contact">
           <ContactPage />
         </Route>
+        <Route path="*">
+            <NotFoundPage />
+          </Route>
       </Switch>
     </React.Fragment>
   );

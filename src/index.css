@@ -41,3 +41,8 @@ body.modal-open {
 body.modal-close {
   overflow: auto;
 }
+
+.centered {
+  margin: 100px auto 0 auto;
+  width: 300px;
+}
