@@ -128,6 +128,12 @@ header .not-active-nav ul a:hover {
     display: none;
 }
 
+@media  only screen and (max-width: 1500px) {
+    .hero-container img {
+        width: 90%;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .main-header {
         min-height: 500px;

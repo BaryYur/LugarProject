@@ -76,6 +76,25 @@ form textarea:focus {
     opacity: 0.6;
 }
 
+.form-container form button:disabled,
+.form-container form button:disabled:hover,
+.form-container form button:disabled:active {
+  background-color: #ccc;
+  color: #3f3f3f;
+  border-color: #ccc;
+  cursor: not-allowed;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container form .invalid-input {
+    border: 1px solid indianred;
+    background-color: rgba(205, 92, 92, 0.37);
+}
+
+.form-container form .invalid-input::placeholder {
+    color: white;
+}
+
 @media only screen and (max-width: 1150px) {
     .form-container {
         width: 100%;
