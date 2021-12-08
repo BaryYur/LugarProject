@@ -27,8 +27,7 @@ function FormContainer () {
                 <img src={houseForm} alt="house-form" />
             </div>
             <div className="rg__form-container">
-                <Form onAddUser={addUserHandler} />
-                {isLoading && <p>Loading...</p>}
+                <Form loading={isLoading} onAddUser={addUserHandler} />
             </div>
         </div>
     );

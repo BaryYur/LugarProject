@@ -185,6 +185,12 @@
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .second-slider-main-container {
+        min-height: 0;
+    }
+}
+
 @media only screen and (max-width: 850px) {
     .sec-slide-container .rg__sec-slide-cont img {
         width: 30px;

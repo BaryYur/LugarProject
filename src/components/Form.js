@@ -148,6 +148,7 @@ function Form (props) {
                     <div>
                         <button disabled={!formIsValid}>Get a quote</button>
                         <p>We don't sell your email and spam.</p>
+                        {props.loading && <p className="loading-p-in-form">Loading...</p>}
                     </div>
                 </form>
         </div>

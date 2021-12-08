@@ -57,7 +57,7 @@ form textarea:focus {
 
 .form-container form div:nth-child(6) {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 40px;
 }
 
@@ -70,10 +70,11 @@ form textarea:focus {
     font-weight: 600;
 }
 
-.form-container form div:nth-child(6) p {
-    margin-left: 18px;
+.form-container form div:nth-child(6) p:nth-child(2) {
+    margin: 0 0 0 18px;
     font-size: 12px;
     opacity: 0.6;
+    display: block;
 }
 
 .form-container form button:disabled,
@@ -93,6 +94,12 @@ form textarea:focus {
 
 .form-container form .invalid-input::placeholder {
     color: white;
+}
+
+.loading-p-in-form {
+    color: black;
+    padding: 10px 0 0 25px;
+    font-size: 18px;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -222,5 +229,17 @@ form textarea:focus {
 
     .form-container form div:nth-child(6) button {
         padding: 10px 15px;
+    }
+
+    .form-container form div:nth-child(6) {
+        position: relative;
+        height: 90px;
+        padding-top: 0;
+    }
+
+    .loading-p-in-form {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
