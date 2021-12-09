@@ -33,7 +33,7 @@ function App() {
         </Route>
         <Route path="*">
             <NotFoundPage />
-          </Route>
+        </Route>
       </Switch>
     </React.Fragment>
   );
