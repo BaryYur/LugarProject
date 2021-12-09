@@ -242,4 +242,8 @@ form textarea:focus {
         bottom: 0;
         right: 0;
     }
+
+    form h2 {
+        font-size: 30px;
+    }
 }
