@@ -65,8 +65,6 @@ function SecondSliderContainer () {
         },
     ];
 
-
-
     return (
         <div className="second-slider-main-container">
             <div className="second-slide__header">
