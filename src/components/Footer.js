@@ -3,58 +3,69 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './Footer.css';
+import logoFooter from '../images/footer-logo.png';
  
-function Footer() {
+function Footer () {
     return (
         <footer>
-            <div></div>
+            <div className="footer-content">
             <div>
-                <p></p>
+                <Link to="/starting">
+                    <img src={logoFooter} alt="footer-logo" />
+                </Link>
+                <p>2118 Thornridge Cir. Dubai, UAE 35624</p>
+                <p>+33 415 65356 - 9</p>
+                <p>contact@lugar.com</p>
+                <p>Copyright @ 2022 Lugar Inc.</p>
+            </div>
+            <div>
+                <p>Quick links</p>
                 <ul>
                     <li>
-                        <Link to="/"></Link>
+                        <Link to="/home">Home</Link>
                     </li>
                     <li>
-                        <Link to="/"></Link>
+                        <Link to="/about">About</Link>
                     </li>
                     <li>
-                        <Link to="/"></Link>
+                        <Link to="/project">Project</Link>
                     </li>
                     <li>
-                        <Link to="/"></Link>
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </div>
             <div>
-                <p></p>
+                <p>Legal Links</p>
                 <ul>
                     <li>
-                        <Link to="/"></Link>
+                        <Link to="/">Terms</Link>
                     </li>
                     <li>
-                        <Link to="/"></Link>
+                        <Link to="/">Conditions</Link>
                     </li>
                     <li>
-                        <Link to="/"></Link>
+                        <Link to="/">Policy</Link>
                     </li>
                 </ul>
             </div>
             <div>
-                <p></p>
+                <p>Social Media</p>
                 <ul>
                     <li>
-                        <Link to="/"></Link>
+                        <Link to="/">Facebook</Link>
                     </li>
                     <li>
-                        <Link to="/"></Link>
+                        <Link to="/">Twitter</Link>
                     </li>
                     <li>
-                        <Link to="/"></Link>
+                        <Link to="/">YouTube</Link>
                     </li>
                     <li>
-                        <Link to="/"></Link>
+                        <Link to="/">LinkedIn</Link>
                     </li>
                 </ul>
+            </div>
             </div>
         </footer>
     );

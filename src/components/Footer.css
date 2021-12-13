@@ -1,0 +1,97 @@
+footer {
+    background-color: #1E3240;
+    min-height: 400px;
+    padding: 90px 0 45px 0;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-content div:first-child {
+    width: 570px;
+}
+
+footer div p:first-child {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;  
+}
+
+footer .footer-content div:first-child p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 36px;
+    color: #BDBDBD;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-content div:first-child p:before {
+    content: '';
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 8px;
+}
+
+footer .footer-content div:first-child p:nth-child(2)::before {
+    background-image: url(../images/location.png);
+}
+
+footer .footer-content div:first-child p:nth-child(3)::before {
+    background-image: url(../images/phone.png);
+}
+
+footer .footer-content div:first-child p:nth-child(4)::before {
+    background-image: url(../images/email.png);
+}
+
+footer div:first-child p:last-child {
+    margin-top: 119px;
+}
+
+footer .footer-content div:first-child p:nth-child(5)::before {
+    display: none;
+}
+
+footer div ul li {
+    line-height: 36px;
+}
+
+footer div ul li a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #BDBDBD;
+    transition: all 0.3s ease-in-out;
+}
+
+footer div ul li a:hover {
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 1440px) {
+    footer .footer-content {
+        width: 1110px;
+        margin: 0 auto;      
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    footer {
+        padding: 90px 100px 45px 100px;
+    }
+
+    footer .footer-content {
+        width: 100%;
+    }
+}
