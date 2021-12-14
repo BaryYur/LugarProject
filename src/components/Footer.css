@@ -4,16 +4,18 @@ footer {
     padding: 90px 0 45px 0;
 }
 
-footer .footer-content {
+footer .footer-content__container {
     display: flex;
     justify-content: space-between;
+    width: 1110px;
+    margin: 0 auto;
 }
 
-footer .footer-content div:first-child {
+footer .footer-content__container div:first-child {
     width: 570px;
 }
 
-footer div p:first-child {
+footer .footer-content__container div p:first-child {
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
@@ -22,7 +24,7 @@ footer div p:first-child {
     color: #FFFFFF;  
 }
 
-footer .footer-content div:first-child p {
+footer .footer-content__container div:first-child p {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -32,7 +34,7 @@ footer .footer-content div:first-child p {
     align-items: center;
 }
 
-footer .footer-content div:first-child p:before {
+footer .footer-content__container div:first-child p:before {
     content: '';
     display: inline-block;
     height: 14px;
@@ -42,23 +44,19 @@ footer .footer-content div:first-child p:before {
     margin-right: 8px;
 }
 
-footer .footer-content div:first-child p:nth-child(2)::before {
+footer .footer-content__container div:first-child p:nth-child(2)::before {
     background-image: url(../images/location.png);
 }
 
-footer .footer-content div:first-child p:nth-child(3)::before {
+footer .footer-content__container div:first-child p:nth-child(3)::before {
     background-image: url(../images/phone.png);
 }
 
-footer .footer-content div:first-child p:nth-child(4)::before {
+footer .footer-content__container div:first-child p:nth-child(4)::before {
     background-image: url(../images/email.png);
 }
 
-footer div:first-child p:last-child {
-    margin-top: 119px;
-}
-
-footer .footer-content div:first-child p:nth-child(5)::before {
+footer .footer-content__container div:first-child p:nth-child(5)::before {
     display: none;
 }
 
@@ -79,19 +77,100 @@ footer div ul li a:hover {
     transition: all 0.3s ease-in-out;
 }
 
-@media only screen and (min-width: 1440px) {
-    footer .footer-content {
-        width: 1110px;
-        margin: 0 auto;      
+footer .footer-bottom p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 36px;
+    color: #BDBDBD;
+}
+
+@media only screen and (max-width: 1200px) {
+    footer {
+        padding: 90px 50px 45px 50px;
+    }
+
+    footer .footer-content__container {
+        width: 100%;
+    }
+
+    footer .footer-content__container div:first-child {
+        width: 400px;
     }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1100px) {
     footer {
-        padding: 90px 100px 45px 100px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    footer {
+        padding: 45px 20px 40px 20px;
     }
 
-    footer .footer-content {
+    footer .footer-content__container div:first-child {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    footer .footer-content__container {
+        flex-wrap: wrap;
+    }
+
+    footer .footer-content__container div:first-child,
+    footer .footer-content__container div:nth-child(2) {
+        width: 50%;
+    }
+
+    footer .footer-content__container div:nth-child(2) {
+        padding-left: 100px;
+    }
+
+    footer .footer-content__container div:nth-child(3),
+    footer .footer-content__container div:nth-child(4) {
+        width: 50%;
+        padding: 25px 0 20px 0;
+    }
+
+    footer .footer-content__container div:nth-child(4) {
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer .footer-content__container div:first-child,
+    footer .footer-content__container div:nth-child(2) {
         width: 100%;
+        text-align: center;
+    }
+
+    footer .footer-content__container div:first-child {
+        margin-bottom: 25px;
+    }
+
+    footer .footer-content__container div:first-child p {
+        justify-content: center;
+    }
+
+    footer .footer-content__container div:nth-child(2) {
+        padding-left: 0;
+    }
+
+    footer .footer-content__container div:nth-child(3),
+    footer .footer-content__container div:nth-child(4) {
+        width: 100%;
+        padding: 25px 0 20px 0;
+        text-align: center;
+    }
+
+    footer .footer-content__container div:nth-child(4) {
+        padding-left: 0;
+    }
+
+    footer .footer-bottom {
+        text-align: center;
     }
 }

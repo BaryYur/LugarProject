@@ -8,7 +8,7 @@ import logoFooter from '../images/footer-logo.png';
 function Footer () {
     return (
         <footer>
-            <div className="footer-content">
+            <div className="footer-content__container">
             <div>
                 <Link to="/starting">
                     <img src={logoFooter} alt="footer-logo" />
@@ -16,7 +16,6 @@ function Footer () {
                 <p>2118 Thornridge Cir. Dubai, UAE 35624</p>
                 <p>+33 415 65356 - 9</p>
                 <p>contact@lugar.com</p>
-                <p>Copyright @ 2022 Lugar Inc.</p>
             </div>
             <div>
                 <p>Quick links</p>
@@ -66,6 +65,9 @@ function Footer () {
                     </li>
                 </ul>
             </div>
+            </div>
+            <div className="footer-bottom">
+                <p>Copyright @ 2022 Lugar Inc.</p>
             </div>
         </footer>
     );

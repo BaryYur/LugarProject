@@ -80,11 +80,11 @@ form textarea:focus {
 .form-container form button:disabled,
 .form-container form button:disabled:hover,
 .form-container form button:disabled:active {
-  background-color: #ccc;
-  color: #3f3f3f;
-  border-color: #ccc;
-  cursor: not-allowed;
-  transition: all 0.2s ease-in-out;
+    background-color: #ccc;
+    color: #3f3f3f;
+    border-color: #ccc;
+    cursor: not-allowed;
+    transition: all 0.2s ease-in-out;
 }
 
 .form-container form .invalid-input {
@@ -98,7 +98,7 @@ form textarea:focus {
 
 .loading-p-in-form {
     color: black;
-    padding: 10px 0 0 25px;
+    padding-left: 25px;
     font-size: 18px;
 }
 
@@ -240,7 +240,7 @@ form textarea:focus {
     .loading-p-in-form {
         position: absolute;
         bottom: 0;
-        right: 0;
+        right: 70px;
     }
 
     form h2 {
