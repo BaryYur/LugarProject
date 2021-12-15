@@ -77,6 +77,12 @@ footer div ul li a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+footer .footer-bottom {
+    width: 1110px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
 footer .footer-bottom p {
     font-style: normal;
     font-weight: normal;
@@ -96,6 +102,10 @@ footer .footer-bottom p {
 
     footer .footer-content__container div:first-child {
         width: 400px;
+    }
+
+    footer .footer-bottom {
+        width: 100%;
     }
 }
 
