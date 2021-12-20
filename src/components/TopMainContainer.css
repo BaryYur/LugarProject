@@ -3,7 +3,6 @@
 //     justify-content: $just;
 //     align-items: $align;
 // } */
-
 main {
     padding: 150px 0 100px 0;
 }
@@ -56,6 +55,16 @@ h2 {
     font-size: 48px;
 }
 
+@media only screen and (max-width: 1130px) {
+    .top-main__left-container {
+        padding-left: 15px;
+    }
+
+    .top-main__right-container {
+        padding-right: 15px;
+    }
+}
+
 @media only screen and (max-width: 1110px) {
     main {
         padding: 50px 0;
@@ -86,6 +95,12 @@ h2 {
     }
 
     .top-main__right-container .features-container p:last-child {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .top-main__right-container h2 {
         font-size: 30px;
     }
 }
