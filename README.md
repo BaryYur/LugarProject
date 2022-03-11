@@ -11,4 +11,4 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Or you can open this app https://lugur-project.herokuapp.com/starting
+Or you can open this app https://lugar-project.herokuapp.com/starting
